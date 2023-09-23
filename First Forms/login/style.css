@@ -1,0 +1,339 @@
+/* Import the Poppins font from Google Fonts */
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+/* Reset default margin, padding, and box-sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Apply Poppins font and set a background color for the entire page */
+body, html {
+    height: 100%;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Center the content vertically and horizontally on the page */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #ddd;
+}
+
+/* Create a limiter to contain the login container */
+.limiter {
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* Style for the container that holds the login form */
+.container-login {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    background: #ddd;
+    min-height: 100vh; /* Ensure the container takes up at least the viewport height */
+}
+
+/* Style for the main login container */
+.wrap-login {
+    width: 350px;
+    background: #ddd;
+    border-radius: 1000px;
+    overflow: hidden;
+    padding: 66px 55px 33px 55px;
+    box-shadow: 0 0 3px 3px #ddd, 6px 6px 8px 4px rgba(136, 136, 136, 0.7), -6px -6px 8px 4px rgba(244, 244, 244, 0.7);
+    margin-top: -20px; /* Shift the container up slightly */
+    text-align: center;
+}
+
+/* Style for the login form */
+.login-form {
+    width: 100%;
+}
+
+/* Style for the login form title */
+.login-form-title {
+    font-family: 'Poppins';
+    font-size: 30px;
+    font-weight: bold;
+    color: #333333;
+    line-height: 2.2;
+    text-align: center;
+    margin-top: 50px !important; /* Add margin at the top of the title with !important */
+    margin-bottom: 50px !important; /* Add margin at the bottom of the title */
+}
+
+/* Style for the user image */
+img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: -33px auto 20px; /* Center horizontally and add margin at the bottom */
+    display: block; /* Ensures the image is centered properly */
+}
+
+/* Style for the input wrapper */
+.wrap-input {
+    position: relative;
+    margin-bottom: 20px; /* Add margin at the bottom of the input wrapper */
+}
+
+/* Style for the input fields */
+.input {
+    font-family: 'Poppins';
+    font-size: 15px;
+    color: black;
+    line-height: 1.2;
+    display: block;
+    width: 100%;
+    height: 45px;
+    background: transparent;
+    padding: 0 5px;
+    border: 2px solid #adadad;
+    border-radius: 25px; /* Rounded corners */
+    transition: border-color 0.4s; /* Smooth border color transition */
+}
+
+/* Style for input focus state */
+.input:focus {
+    border-color: #333333; /* Change border color when focused */
+}
+
+/* Style for the focus input effect */
+.focus-input {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+}
+
+/* Style for the focus input underline */
+.focus-input:before {
+    content: "";
+    position: absolute;
+    display: block;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #333333;
+    transition: all 0.4s;
+}
+
+/* Style for the input placeholder label */
+.focus-input:after {
+    font-family: "Poppins";
+    font-size: 15px;
+    color: #999999;
+    line-height: 1.2;
+    content: attr(data-placeholder);
+    display: block;
+    width: 100%;
+    position: absolute;
+    top: 16px;
+    left: 0px;
+    padding-left: 5px;
+    transition: all 0.4s;
+    -webkit-transition: all 0.4s;
+}
+
+/* Adjust position of input placeholder when it has a value */
+.has-val.input + .focus-input:after {
+    top: -15px;
+}
+
+/* Expand the focus input underline when input is focused */
+.has-val.input:focus + .focus-input:before {
+    width: 100%;
+}
+
+/* Style for the show password button */
+.btn-show-pass {
+    font-size: 15px;
+    color: #999999;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    height: 100%;
+    top: 0;
+    right: 0;
+    padding-right: 5px;
+    cursor: pointer;
+    transition: all 0.4s;
+}
+
+/* Style for the show password button on hover and active */
+.btn-show-pass:hover {
+    color: #4caf50;
+}
+
+.btn-show-pass:active {
+    color: #4caf50;
+}
+
+/* Remove button outline */
+button {
+    outline: none !important;
+    border: none;
+    background: transparent;
+}
+
+/* Style for text 1 */
+.txt1 {
+    font-family: 'Popppins';
+    font-size: 13px;
+    color: #666666;
+    line-height: 1.5;
+}
+
+/* Style for text 2 */
+.txt2 {
+    font-family: 'Popppins';
+    font-size: 13px;
+    color: #333333;
+    line-height: 1.5;
+    text-decoration: none;
+    transform: all 0.4;
+}
+
+/* Style for text link on hover */
+.text:hover {
+    text-decoration: underline;
+}
+
+/* Style for the container of the login form button */
+.container-login-form-btn {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+/* Button Container Styles */
+.wrap-login-form-btn {
+    width: 100%;
+    display: block;
+    position: relative;
+    z-index: 1;
+    border-radius: 25px;
+    overflow: hidden;
+    margin: 0 auto;
+    box-shadow: 0 0 3px 3px #ddd, 4px 4px 6px 2px rgba(136, 136, 136, 0.7), -4px -4px 6px 2px rgba(244, 244, 244, 0.7);
+    margin-top: -20px; /* Shift the container up slightly */
+    text-align: center;
+}
+
+/* Button Styles */
+.login-form-btn {
+    font-family: "Poppins";
+    font-size: 15px;
+    color: black;
+    line-height: 1.2;
+    font-weight: bold;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 1px;
+    padding: 0 20px;
+    height: 50px;
+    width: 100%;
+}
+
+/* Button hover and active styles */
+.login-form-btn:hover {
+    background-color: black;
+    color: #ddd;
+}
+
+.login-form-btn:active {
+    background-color: black;
+    color: #ddd;
+}
+
+/* Style for input validation messages */
+.validate-input {
+    position: relative;
+}
+
+/* Style for center-aligned text */
+.text-center {
+    text-align: center;
+    padding-top: 10px;
+}
+
+/* Style for validation message before input */
+.alert-validate:before {
+    content: attr(data-validate);
+    position: absolute;
+    max-width: 70%;
+    background-color: #fff;
+    border-radius: 2px;
+    border: 1px solid #c80000;
+    padding: 4px 25px 4px 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0px;
+    pointer-events: none;
+    font-family: 'Poppins';
+    color: #c80000;
+    font-size: 13px;
+    line-height: 1.4;
+    text-align: left;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.4s;
+}
+
+/* Style for validation message icon after input */
+.alert-validate:after {
+    content: "\f1f8";
+    font-family: material-design-iconic-font;
+    font-size: 21px;
+    color: #c80000;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 5px;
+}
+
+/* Show validation message on hover */
+.alert-validate:hover:before {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* Responsive Styles */
+@media (max-width: 576px) {
+    .wrap-login {
+        padding: 77px 15px 33px 15px;
+    }
+    .login-form-btn {
+        font-size: 14px; /* Adjust font size for smaller screens */
+    }
+    .wrap-login-form-btn {
+        margin-top: 20px; /* Adjust margin for smaller screens */
+        width: 90%;
+    }
+    
+}
+
+@media (max-width: 992px) {
+    .alert-validate:hover:before {
+        visibility: visible;
+        opacity: 1;
+    }
+    /* Additional styles for screens up to 992px */
+    .login-form-btn {
+        font-size: 14px; /* Adjust font size for screens up to 992px */
+    }
+}

@@ -1,0 +1,199 @@
+/* Reset default margin, padding, and box-sizing */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Apply Poppins font from Google Fonts */
+body,
+html {
+  font-family: Arial, sans-serif;
+  background-color: #333;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Style for the container that holds the login form */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background: #333;
+  min-height: 100vh;
+  padding: 10px;
+}
+
+/* Style for the main login container */
+.login {
+  display: flex;
+  flex-wrap: wrap;
+  box-shadow: 0 0 1px 1px #ddd, 1px 1px 1px 1px rgba(144, 144, 144, 0.2),
+    -6px -6px 8px 4px rgba(248, 248, 248, 0.2);
+  margin-top: -20px;
+  width: 100%; /* Occupy full width on small screens */
+  max-width: 800px; /* Limit maximum width for larger screens */
+  justify-content: space-between; /* Add space between login form and banner */
+}
+
+/* Style for the login form container */
+.login-form {
+  width: 50%;
+  background: #333;
+  border-radius: 10px 0px 0 0;
+  display: flex;
+  flex-direction: column; /* Adjust layout to column for responsiveness */
+  align-items: center; /* Center align form elements */
+  padding: 50px;
+}
+
+/* Style for the login form */
+.login-form form {
+  width: 100%;
+}
+
+/* Style for the heading */
+.login-form h1 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 20px; /* Add spacing below the heading */
+}
+
+.sub-heading {
+  font-size: 0.875rem; /* Adjust the font size as needed */
+  color: #a1a1aa; /* Use the desired text color */
+}
+
+/* Style for input fields */
+.login-form input[type="email"],
+.login-form input[type="password"] {
+  width: 100%;
+  padding: 10px; /* Increase padding for better touch input on mobile */
+  border: 1px solid #adadad;
+  border-radius: 5px;
+  margin-bottom: 20px; /* Add more spacing between inputs */
+  background-color: #444;
+  color: #fff;
+}
+
+/* Style for the remember checkbox and forgot password link */
+.login-form .link {
+  margin-bottom: 20px; /* Add spacing below the checkbox and link */
+}
+
+/* Style for the sign-in buttons */
+.login-form .sign-form-btn {
+  width: 100%;
+  padding: 12px; /* Increase padding for better touch input on mobile */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #4285f4;
+  color: #fff;
+  transition: background-color 0.3s ease-in-out;
+  margin-bottom: 20px;
+  font-size: initial;
+}
+
+/* Hover effect for the "Sign in" button */
+.login-form .sign-form-btn:hover {
+  background-color: #357ae8;
+}
+
+/* Style for the Google sign-in button */
+.login-form .google-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Center content horizontally and vertically */
+}
+
+/* Style for the Google sign-in image */
+.login-form .google-btn img {
+  width: 18px; /* Adjust the size of the Google image */
+  margin-right: 10px; /* Add spacing between the image and text */
+}
+
+/* Style for the user image */
+.login-form .sign-img {
+  width: 100px;
+  height: 16px;
+  border-radius: 50%;
+  margin: -33px auto 20px;
+}
+
+/* Style for the footer text */
+.footer {
+  text-align: center;
+  margin-top: 20px; /* Add spacing at the top of the footer */
+}
+
+.label {
+  font-size: 0.875rem; /* Adjust the font size as needed */
+  color: #a1a1aa; /* Use the desired text color */
+}
+
+/* Style for links */
+.link {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Style for the sign-in banner */
+.sign-banner {
+  width: 50%; /* Adjust the width for the banner */
+  max-height: 508px; /* Limit the maximum height of the banner */
+  overflow: hidden; /* Hide overflowing content */
+  order: 2; /* Move the banner to the right side by changing the order */
+}
+
+/* Style for the sign-in banner image */
+.sign-banner img {
+  width: 100%;
+  height: auto; /* Automatically adjust the height to maintain aspect ratio */
+  object-fit: cover; /* Cover the entire banner area */
+  border-radius: 0 10px 10px 0; /* Adjust border-radius for rounded corners on the right side */
+}
+
+/* Media Query for screens smaller than 768px */
+@media (max-width: 768px) {
+  .login {
+    flex-direction: column; /* Stack login form and banner on smaller screens */
+    max-width: 100%; /* Occupy full width on small screens */
+  }
+
+  .login-form {
+    width: 100%; /* Occupy full width on small screens */
+  }
+
+  .sign-banner {
+    width: 100%; /* Occupy full width on small screens */
+    max-height: none; /* Remove maximum height on small screens */
+    order: 1; /* Move the banner to the top on smaller screens */
+    border-radius: 10px 10px 0 0; /* Adjust border-radius for rounded corners on top */
+  }
+
+  /* Adjust font size for smaller screens */
+  .login-form h1 {
+    font-size: 1.25rem;
+  }
+
+  .sub-heading {
+    font-size: 0.75rem;
+  }
+
+  .login-form input[type="email"],
+  .login-form input[type="password"] {
+    font-size: 0.875rem;
+  }
+
+  .link {
+    font-size: 0.75rem;
+  }
+}
