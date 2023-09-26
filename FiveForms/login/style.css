@@ -186,6 +186,7 @@ body {
   .main-container {
     flex-direction: column; /* Stack the sections vertically */
     width: 140%; /* Take up full width */
+    min-height: 940px;
   }
 
   .bg-image .container-right-side {
@@ -194,7 +195,7 @@ body {
 
   .right-side-mainwork {
     position: absolute;
-    top: 71%;
+    top: 95%;
     left: 71%;
     transform: translate(-50%, -50%);
     text-align: center;
@@ -207,6 +208,7 @@ body {
   /* Adjust the layout for this screen size */
   .main-container {
     flex-direction: column; /* Stack the sections vertically */
+    min-height: 940px;
   }
 
   /* Adjust the width of the left and right sections if needed */
@@ -217,7 +219,7 @@ body {
   }
   .right-side-mainwork {
     position: absolute;
-    top: 71%;
+    top: 95%;
     left: 53%;
     transform: translate(-50%, -50%);
     text-align: center;
