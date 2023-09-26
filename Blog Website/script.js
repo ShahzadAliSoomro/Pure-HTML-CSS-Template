@@ -4,16 +4,19 @@ document.addEventListener('DOMContentLoaded', function () {
 
 // Define an array of URLs corresponding to each card
 const cardUrls = [
-    'https://enchanted-wash.surge.sh',
-    'https://ultra-spring.surge.sh',
+    'https://black-login.surge.sh/',
+    'https://tearful-signin.surge.sh/',
+    'https://elegant-login.surge.sh/',
+    'https://obese-signin.surge.sh/',
+    
     'https://early-believe.surge.sh/',
     'https://resolute-pizzas.surge.sh/',
     'https://auspicious-dark.surge.sh/',
     'https://telling-dark.surge.sh/',
-    'https://elegant-login.surge.sh/',
-    'https://obese-signin.surge.sh/',
-    'https://black-login.surge.sh/',
-    'https://tearful-signin.surge.sh/',
+    
+    'https://enchanted-wash.surge.sh',
+    'https://ultra-spring.surge.sh',
+    
     
     // Add more URLs as needed for each card
 ];
