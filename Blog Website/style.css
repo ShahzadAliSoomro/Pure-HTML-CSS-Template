@@ -1,203 +1,206 @@
 /* Reset some default styles */
-body, h1, h2, h3, p, ul {
-    margin: 0;
-    padding: 0;
+body,
+h1,
+h2,
+h3,
+p,
+ul {
+  margin: 0;
+  padding: 0;
 }
 
 /* Basic styling */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
 }
 
 /* ... (Previous CSS rules) */
 
 /* Navbar styles */
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-    position: fixed;
-    width: 95%;
-    top: 0;
-    z-index: 100;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  position: fixed;
+  width: 95%;
+  top: 0;
+  z-index: 100;
 }
 
 .navbar h1 {
-    color: #fff;
-    margin: 0;
-    font-size: 24px;
+  color: #fff;
+  margin: 0;
+  font-size: 24px;
 }
 
 nav ul {
-    list-style: none;
+  list-style: none;
 }
 
 nav ul li {
-    display: inline;
-    margin-right: 20px;
+  display: inline;
+  margin-right: 20px;
 }
 
 nav ul li:last-child {
-    margin-right: 0;
+  margin-right: 0;
 }
 
 nav ul li a {
-    text-decoration: none;
-    color: #fff;
+  text-decoration: none;
+  color: #fff;
 }
 
 .hero {
-    background-image: url("https://images.unsplash.com/photo-1577495508048-b635879837f1?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=675&q=80");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    color: #fff;
-    text-align: center;
-    padding: 100px 0;
-    height: 500px;
-    display: flex;
-    align-items: center;
+  background-image: url("https://media.istockphoto.com/id/1146729771/photo/dark-blue-watercolor-frame-with-torn-strokes-and-stripes-with-copy-space-for-text.jpg?s=612x612&w=0&k=20&c=ZYpUbQvyonQTSTlzG6_-OZGKQaA5-gl99QrQV10dLr0=");
+  /* background-image: url("https://images.unsplash.com/photo-1577495508048-b635879837f1?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=675&q=80"); */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: #fff;
+  text-align: center;
+  padding: 100px 0;
+  height: 500px;
+  display: flex;
+  align-items: center;
 }
 
-.hero-black {
-    background-color: rgba(0, 0, 0, 0.5);
+/* .hero-black {
+    background-color: rgba(0, 0, 0, 0.1);
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 700px;
-}
+} */
 
 .hero-content {
-    max-width: 800px;
-    margin: 0 auto;
-    text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
 }
 
 .hero-heading {
-    font-size: 48px;
-    margin: 0;
-    color: #fff; /* Set text color to white */
+  font-size: 48px;
+  margin: 0;
+  color: #fff; /* Set text color to white */
 }
 
 .form-des {
-    font-size: 24px;
-    color: #fff; /* Set text color to white */
+  font-size: 24px;
+  color: #fff; /* Set text color to white */
 }
 
 .para {
-    font-size: 18px;
-    margin: 20px 0;
-    color: #fff; /* Set text color to white */
-    max-width: 100%; /* Adjusted for responsiveness */
-    width: 512px;
+  font-size: 18px;
+  margin: 20px 0;
+  color: #fff; /* Set text color to white */
+  max-width: 100%; /* Adjusted for responsiveness */
+  width: 512px;
 }
 
 .hero-btn {
-    background-color: #007BFF;
-    color: #fff; /* Set text color to white */
-    padding: 10px 20px;
-    font-size: 20px;
-    border: none;
-    cursor: pointer;
+  background-color: #007bff;
+  color: #fff; /* Set text color to white */
+  padding: 10px 20px;
+  font-size: 20px;
+  border: none;
+  cursor: pointer;
 }
 
 .hero-btn:hover {
-    background-color: #0056b3;
+  background-color: #0056b3;
 }
 
 main {
-    max-width: 100%;
-    margin: 20px auto;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 5px;
-    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+  max-width: 100%;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+}
+
+.content {
+  text-align: center;
+  margin: 10px auto;
 }
 
 /* Blog card styles */
 .blog-cards {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center; /* Center the cards */
-    gap: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Center the cards */
+  gap: 20px;
 }
 
 .card {
-    flex-basis: calc(33.33% - 20px); /* Adjust width to fit 3 cards in one row */
-    margin-bottom: 20px;
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
-    cursor: pointer;
-    max-width: 412px; /* Set maximum width for the cards */
+  flex-basis: calc(33.33% - 20px); /* Adjust width to fit 3 cards in one row */
+  margin-bottom: 20px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  max-width: 412px; /* Set maximum width for the cards */
 }
 
 .card img {
-    max-width: 100%;
-    height: 274.77px; /* Set the specific height for the card images */
-}
-
-.img-1 {
-    background-image: url("https://enchanted-wash.surge.sh/");
-    max-width: 100%;
-    height: 274.77px; /* Set the specific height for the card images */
+  max-width: 100%;
+  height: 274.77px; /* Set the specific height for the card images */
 }
 
 footer {
-    text-align: center;
-    background-color: #333;
-    color: #fff;
-    padding: 10px;
+  text-align: center;
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
 }
-
 
 /* Add a media query to change the layout for smaller screens */
 @media screen and (max-width: 1024px) {
-    .blog-cards {
-        justify-content: flex-start; /* Display cards in a single column */
-    }
+  .blog-cards {
+    justify-content: flex-start; /* Display cards in a single column */
+  }
 
-    .card {
-        flex-basis: calc(100% - 20px); /* Adjust width to fit 2 cards in one row */
-    }
+  .card {
+    flex-basis: calc(100% - 20px); /* Adjust width to fit 2 cards in one row */
+  }
 
-    .hero {
-        height: 500px; /* Adjust hero height for smaller screens */
-    }
+  .hero {
+    height: 500px; /* Adjust hero height for smaller screens */
+  }
 }
 
 /* Hero styles for mobile screens */
 @media screen and (max-width: 768px) {
-    .hero {
-        padding: 60px 0; /* Adjust padding for smaller screens */
-        height: 580px; /* Allow height to adjust based on content */
-    }
+  .hero {
+    padding: 60px 0; /* Adjust padding for smaller screens */
+    height: 580px; /* Allow height to adjust based on content */
+  }
 
-    .hero-heading {
-        font-size: 36px; /* Adjust font size for smaller screens */
-    }
+  .hero-heading {
+    font-size: 36px; /* Adjust font size for smaller screens */
+  }
 
-    .form-des {
-        font-size: 20px; /* Adjust font size for smaller screens */
-    }
+  .form-des {
+    font-size: 20px; /* Adjust font size for smaller screens */
+  }
 
-    .para {
-        font-size: 16px; /* Adjust font size for smaller screens */
-        max-width: 100%; /* Adjusted for responsiveness */
-        width: 90%; /* Set width to 90% for responsiveness on mobile screens */
-    }
+  .para {
+    font-size: 16px; /* Adjust font size for smaller screens */
+    max-width: 100%; /* Adjusted for responsiveness */
+    width: 90%; /* Set width to 90% for responsiveness on mobile screens */
+  }
 
-    .hero-btn {
-        font-size: 18px; /* Adjust font size for smaller screens */
-        padding: 8px 16px; /* Adjust padding for smaller screens */
-    }
+  .hero-btn {
+    font-size: 18px; /* Adjust font size for smaller screens */
+    padding: 8px 16px; /* Adjust padding for smaller screens */
+  }
 }
-
