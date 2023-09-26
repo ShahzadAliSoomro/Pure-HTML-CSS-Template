@@ -52,14 +52,6 @@ nav ul li a {
     color: #fff;
 }
 
-
-/* header {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 20px;
-} */
-
 .hero {
     background-image: url("https://images.unsplash.com/photo-1577495508048-b635879837f1?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=675&q=80");
     background-size: cover;
@@ -68,7 +60,7 @@ nav ul li a {
     color: #fff;
     text-align: center;
     padding: 100px 0;
-    height: 400px;
+    height: 500px;
     display: flex;
     align-items: center;
 }
@@ -79,7 +71,7 @@ nav ul li a {
     top: 0;
     left: 0;
     width: 100%;
-    height: 600px;
+    height: 700px;
 }
 
 .hero-content {
@@ -97,13 +89,13 @@ nav ul li a {
 .form-des {
     font-size: 24px;
     color: #fff; /* Set text color to white */
-    
 }
 
 .para {
     font-size: 18px;
     margin: 20px 0;
     color: #fff; /* Set text color to white */
+    max-width: 100%; /* Adjusted for responsiveness */
     width: 512px;
 }
 
@@ -120,10 +112,8 @@ nav ul li a {
     background-color: #0056b3;
 }
 
-
-
 main {
-    max-width: 800px;
+    max-width: 100%;
     margin: 20px auto;
     padding: 20px;
     background-color: #fff;
@@ -135,7 +125,8 @@ main {
 .blog-cards {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center; /* Center the cards */
+    gap: 20px;
 }
 
 .card {
@@ -146,11 +137,18 @@ main {
     border-radius: 5px;
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
     cursor: pointer;
+    max-width: 412px; /* Set maximum width for the cards */
 }
 
 .card img {
     max-width: 100%;
-    height: auto;
+    height: 274.77px; /* Set the specific height for the card images */
+}
+
+.img-1 {
+    background-image: url("https://enchanted-wash.surge.sh/");
+    max-width: 100%;
+    height: 274.77px; /* Set the specific height for the card images */
 }
 
 footer {
@@ -159,3 +157,47 @@ footer {
     color: #fff;
     padding: 10px;
 }
+
+
+/* Add a media query to change the layout for smaller screens */
+@media screen and (max-width: 1024px) {
+    .blog-cards {
+        justify-content: flex-start; /* Display cards in a single column */
+    }
+
+    .card {
+        flex-basis: calc(100% - 20px); /* Adjust width to fit 2 cards in one row */
+    }
+
+    .hero {
+        height: 500px; /* Adjust hero height for smaller screens */
+    }
+}
+
+/* Hero styles for mobile screens */
+@media screen and (max-width: 768px) {
+    .hero {
+        padding: 60px 0; /* Adjust padding for smaller screens */
+        height: 580px; /* Allow height to adjust based on content */
+    }
+
+    .hero-heading {
+        font-size: 36px; /* Adjust font size for smaller screens */
+    }
+
+    .form-des {
+        font-size: 20px; /* Adjust font size for smaller screens */
+    }
+
+    .para {
+        font-size: 16px; /* Adjust font size for smaller screens */
+        max-width: 100%; /* Adjusted for responsiveness */
+        width: 90%; /* Set width to 90% for responsiveness on mobile screens */
+    }
+
+    .hero-btn {
+        font-size: 18px; /* Adjust font size for smaller screens */
+        padding: 8px 16px; /* Adjust padding for smaller screens */
+    }
+}
+
