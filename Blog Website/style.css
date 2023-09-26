@@ -1,0 +1,161 @@
+/* Reset some default styles */
+body, h1, h2, h3, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* Basic styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+/* ... (Previous CSS rules) */
+
+/* Navbar styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    position: fixed;
+    width: 95%;
+    top: 0;
+    z-index: 100;
+}
+
+.navbar h1 {
+    color: #fff;
+    margin: 0;
+    font-size: 24px;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li:last-child {
+    margin-right: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+
+/* header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+} */
+
+.hero {
+    background-image: url("https://images.unsplash.com/photo-1577495508048-b635879837f1?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=675&q=80");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    padding: 100px 0;
+    height: 400px;
+    display: flex;
+    align-items: center;
+}
+
+.hero-black {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 600px;
+}
+
+.hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.hero-heading {
+    font-size: 48px;
+    margin: 0;
+    color: #fff; /* Set text color to white */
+}
+
+.form-des {
+    font-size: 24px;
+    color: #fff; /* Set text color to white */
+    
+}
+
+.para {
+    font-size: 18px;
+    margin: 20px 0;
+    color: #fff; /* Set text color to white */
+    width: 512px;
+}
+
+.hero-btn {
+    background-color: #007BFF;
+    color: #fff; /* Set text color to white */
+    padding: 10px 20px;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.hero-btn:hover {
+    background-color: #0056b3;
+}
+
+
+
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Blog card styles */
+.blog-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.card {
+    flex-basis: calc(33.33% - 20px); /* Adjust width to fit 3 cards in one row */
+    margin-bottom: 20px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+
+.card img {
+    max-width: 100%;
+    height: auto;
+}
+
+footer {
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+}
