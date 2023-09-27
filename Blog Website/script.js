@@ -4,8 +4,10 @@ document.addEventListener('DOMContentLoaded', function () {
 
 // Define an array of URLs corresponding to each card
 const cardUrls = [
-    'https://black-login.surge.sh/',
-    'https://tearful-signin.surge.sh/',
+    'https://quick-login.surge.sh/',
+    'https://pathetic-signup.surge.sh/',
+    'https://fantastic-login.surge.sh/',
+    'https://illustrious-signup.surge.sh/',
     'https://elegant-login.surge.sh/',
     'https://obese-signin.surge.sh/',
     
