@@ -10,9 +10,10 @@ const cardUrls = [
     'https://illustrious-signup.surge.sh/',
     'https://elegant-login.surge.sh/',
     'https://obese-signin.surge.sh/',
-    
-    'https://early-believe.surge.sh/',
-    'https://resolute-pizzas.surge.sh/',
+    'https://tame-login.surge.sh/',
+    'https://yalinkrahtihy',
+    'https://zany-login.surge.sh/',
+    'https://strange-signup.surge.sh/',
     'https://auspicious-dark.surge.sh/',
     'https://telling-dark.surge.sh/',
     

@@ -1,0 +1,182 @@
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Style for the main container */
+  .container {
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Style for the background image */
+  .container-login {
+    position: relative;
+    height: 800px;
+    width: 400px;
+    overflow: hidden;
+    border-radius: 20px;
+  }
+  
+  /* Background image */
+  .background-image {
+    background-image: url("https://img.freepik.com/free-photo/abstract-glowing-flame-drops-electric-illumination-generative-ai_188544-8092.jpg?size=626&ext=jpg&ga=GA1.1.1684676600.1686821776&semt=sph");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+  }
+  
+  /* Style for the form container */
+  .wrap-login {
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    height: 82%;
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Style for the form */
+  .login-form {
+    margin-top: 2%;
+    padding: 12px;
+    /* text-align: center; */
+  }
+  
+  /* Style for form inputs */
+  .input {
+    position: relative;
+    height: 48px; /* Adjust the height as needed */
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 20px;
+    background-color: #fff;
+    color: #000;
+    font-size: 14px;
+    outline: none;
+    margin-bottom: 14px; /* Add some vertical spacing between inputs */
+  }
+  /* Style for the .label-input class */
+  .label-input {
+    position: relative;
+    font-size: 20px;
+    transition: all 0.3s ease;
+    color: white;
+    margin-bottom: 5px;
+    margin-left: 8px;
+    /* Add any other styles you want for the left side of the input */
+  }
+  
+  /* Style for the login button */
+  .login-form-btn {
+    height: 48px;
+    width: 100%;
+    border: none;
+    border-radius: 20px;
+    background-color: #4285f4;
+    color: white;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+    font-size: 18px;
+  }
+  
+  /* Hover effect for the login button */
+  .login-form-btn:hover {
+    background-color: #357ae8;
+  }
+  
+  /* Style for the "Forgot password?" link */
+  .link {
+    font-size: 14px;
+    color: white;
+    margin-top: 10px;
+    text-decoration: none;
+    margin-left: 136px;
+    border: outset white;
+  }
+  
+  /* Style for the "Sign up" link */
+  .link:hover {
+    color: #4285f4;
+    font-weight: bold;
+  }
+  
+  /* Center the text inside the link and add a gap of 20px */
+  .link-forgot {
+    display: block;
+    text-align: center; /* Center the text horizontally */
+    margin-top: 20px; /* Add a gap of 20px from the top */
+    color: white;
+    font-size: 20px;
+  }
+  
+  /* Style for the link container */
+  .login-links a {
+    display: flex; /* Display children (span elements) in a row */
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+    border: 2px solid white; /* Add a white border */
+    border-radius: 20px;
+    padding: 10px; /* Add padding for spacing */
+    margin: 10px; /* Add margin for spacing between links */
+    text-decoration: none; /* Remove underlines from links */
+    color: white; /* Set text color to white */
+  }
+  
+  /* Style for the icon */
+  .icon {
+    width: 24px; /* Adjust the icon width as needed */
+    height: 24px; /* Adjust the icon height as needed */
+    fill: currentColor; /* Use the link's text color for the icon */
+    margin-right: 10px; /* Add margin to separate the icon and text */
+  }
+  
+  /* Style for the label text */
+  .label-twitter,
+  .label-github {
+    font-weight: bold; /* Add bold font weight to the text */
+    text-align: center; /* Center the text horizontally */
+    justify-content: center;
+    font-size: 20px;
+  }
+  
+  /* Center-align the text inside the paragraph */
+  .label-text {
+    text-align: center;
+    color: white;
+  }
+  
+  /* Style for the "Sign up" link */
+  .link-signup {
+    color: #fff; /* Change the link color as needed */
+    text-decoration: none; /* Remove underlines from the link */
+    font-weight: bold; /* Add bold font weight to the link text */
+    margin-left: 10px; /* Add some space to the left of the link */
+    font-size: 20px;
+  }
+  
+  /* Media Query for Medium Screens */
+  @media (min-width: 769px) and (max-width: 1024px) {
+    /* Adjust your styles for medium screens here */
+    .container-login {
+      width: 80%; /* Reduce width on medium screens */
+    }
+  }
+  
+  /* Media Query for Large Screens */
+  @media (min-width: 1025px) {
+    /* Adjust your styles for large screens here */
+  }
+  
