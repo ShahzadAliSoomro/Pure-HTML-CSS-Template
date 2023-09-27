@@ -1,0 +1,267 @@
+/* Reset some default styles */
+body {
+    margin: 0;
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  /* Main container */
+  .main-container {
+    display: flex;
+    min-height: 100vh;
+  }
+  
+  /* Left section */
+  .bg-image {
+    background-image: url("https://images.unsplash.com/photo-1577495508048-b635879837f1?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=675&q=80");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    flex: 1;
+    color: #fff;
+  }
+  
+  .bg-black {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .img-text-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  .heading {
+    font-size: 36px;
+  }
+  
+  .para {
+    font-size: 18px;
+    margin-top: 20px;
+    text-align: justify; /* Justify the text within the paragraph */
+  }
+  
+  .img-icons {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 20px;
+  }
+  
+  .img-icons span {
+    background-color: #007bff;
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  /* Right section */
+  .container-right-side {
+    flex: 1;
+    background-color: #161616;
+    padding: 40px;
+  }
+  
+  .right-side-img {
+    background-image: url("https://images.unsplash.com/photo-1577495508048-b635879837f1?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=675&q=80");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    flex: 1;
+  }
+  
+  .bg-right {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .right-side-mainwork {
+    position: absolute;
+    top: 50%;
+    left: 71%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+  }
+  
+  .right-side-mainwork-heading {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  .right-side-mainwork-social {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .right-side-mainwork-para {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  
+  .right-side-mainwork-form {
+    max-width: 340px;
+    margin: 0 auto;
+  }
+  
+  .input {
+    margin-bottom: 25px;
+  }
+  
+  .input input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    color: #000; /* Set the text color to white */
+    font-size: 24px; /* You can adjust the font size as needed */
+    
+  }
+  
+  .forgot {
+    margin-left: -206px; /* Adjust the margin as needed to position it to the right */
+  }
+  
+  .forgot a {
+    color: #fff;
+  }
+  
+  .right-side-mainwork-div {
+    margin-top: 20px;
+  }
+  
+  .login-btn {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 14px 156px;
+    cursor: pointer;
+    font-size: 20px;
+  }
+  
+  /* Center align the social icons and add spacing */
+  .right-side-mainwork-social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  /* Style the social icons */
+  .right-side-mainwork-social-icons-a {
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border: 1px solid #fff;
+  }
+  /* Media queries for responsiveness */
+  
+  /* For screens smaller than 768px */
+  @media (max-width: 767px) {
+    .main-container {
+      flex-direction: column; /* Stack the sections vertically */
+      width: 140%; /* Take up full width */
+      min-height: 940px;
+    }
+  
+    .bg-image .container-right-side {
+      width: 100%; /* Take up full width */
+    }
+  
+    .right-side-mainwork {
+      position: absolute;
+      top: 95%;
+      left: 71%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      color: #fff;
+    }
+  }
+  
+  /* For screens between 768px and 1023px */
+  @media (min-width: 768px) and (max-width: 1023px) {
+    /* Adjust the layout for this screen size */
+    .main-container {
+      flex-direction: column; /* Stack the sections vertically */
+      min-height: 940px;
+    }
+  
+    /* Adjust the width of the left and right sections if needed */
+    .bg-image,
+    .container-right-side {
+      flex: 1; /* Equal width for both sections */
+      top: 0;
+    }
+    .right-side-mainwork {
+      position: absolute;
+      top: 95%;
+      left: 53%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      color: #fff;
+    }
+    /* You can add specific styles for screens 1024px and larger here */
+    /* For example, you can adjust font sizes, margins, or paddings */
+    .heading {
+      font-size: 48px; /* Example font size adjustment */
+    }
+  
+    .para {
+      font-size: 24px; /* Example font size adjustment */
+      margin-top: 30px; /* Example margin adjustment */
+    }
+  }
+  
+  /* For screens 1024px and larger */
+  @media (min-width: 1024px) {
+    /* Reset the flex layout to horizontal */
+    .main-container {
+      flex-direction: row; /* Reset to horizontal layout */
+    }
+  
+    /* Adjust the width of the left and right sections if needed */
+    .bg-image,
+    .container-right-side {
+      flex: 1; /* Equal width for both sections */
+    }
+  
+    /* You can add specific styles for screens 1024px and larger here */
+    /* For example, you can adjust font sizes, margins, or paddings */
+    .heading {
+      font-size: 48px; /* Example font size adjustment */
+    }
+  
+    .para {
+      font-size: 24px; /* Example font size adjustment */
+      margin-top: 30px; /* Example margin adjustment */
+    }
+  
+    /* Add any other styles you need for larger screens */
+  }
+  
