@@ -12,6 +12,10 @@
 body, html {
     height: 100%;
     font-family: 'Poppins', sans-serif;
+    background-image: url('https://media.istockphoto.com/id/1185010668/photo/abstract-3d-concrete-cube-background-with-neon-lights.jpg?s=612x612&w=0&k=20&c=jv20qDwYNAihXpxM1gfrACGPAgMcPmUZ7OKWhK-RWD8='); /* Replace with your background image path */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 /* Center the content vertically and horizontally on the page */
@@ -19,7 +23,6 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #ddd;
 }
 
 /* Create a limiter to contain the login container */
@@ -36,20 +39,18 @@ body {
     justify-content: center;
     align-items: center;
     padding: 15px;
-    background: #ddd;
     min-height: 100vh; /* Ensure the container takes up at least the viewport height */
 }
 
 /* Style for the main login container */
 .wrap-login {
-    width: 350px;
-    background: #ddd;
-    border-radius: 1000px;
+    width: 395px;
     overflow: hidden;
     padding: 66px 55px 33px 55px;
     box-shadow: 0 0 3px 3px #ddd, 6px 6px 8px 4px rgba(136, 136, 136, 0.7), -6px -6px 8px 4px rgba(244, 244, 244, 0.7);
     margin-top: -20px; /* Shift the container up slightly */
     text-align: center;
+    color: #fff;
 }
 
 /* Style for the login form */
@@ -62,7 +63,7 @@ body {
     font-family: 'Poppins';
     font-size: 30px;
     font-weight: bold;
-    color: #333333;
+    color: #fff;
     line-height: 2.2;
     text-align: center;
     margin-top: 50px !important; /* Add margin at the top of the title with !important */
@@ -81,20 +82,21 @@ img {
 /* Style for the input wrapper */
 .wrap-input {
     position: relative;
-    margin-bottom: 20px; /* Add margin at the bottom of the input wrapper */
+    margin-bottom: 30px; /* Add margin at the bottom of the input wrapper */
+    /* width: 290px; */
 }
 
 /* Style for the input fields */
 .input {
     font-family: 'Poppins';
     font-size: 15px;
-    color: black;
+    color: #fff;
     line-height: 1.2;
     display: block;
     width: 100%;
-    height: 45px;
+    height: 52px;
     background: transparent;
-    padding: 0 5px;
+    padding: 0 10px;
     border: 2px solid #adadad;
     border-radius: 25px; /* Rounded corners */
     transition: border-color 0.4s; /* Smooth border color transition */
@@ -125,7 +127,7 @@ img {
     left: 0;
     width: 0;
     height: 2px;
-    background: #333333;
+    background: #fff;
     transition: all 0.4s;
 }
 
@@ -133,7 +135,7 @@ img {
 .focus-input:after {
     font-family: "Poppins";
     font-size: 15px;
-    color: #999999;
+    color: #fff;
     line-height: 1.2;
     content: attr(data-placeholder);
     display: block;
@@ -159,7 +161,7 @@ img {
 /* Style for the show password button */
 .btn-show-pass {
     font-size: 15px;
-    color: #999999;
+    color: #fff;
     display: flex;
     align-items: center;
     position: absolute;
@@ -173,11 +175,11 @@ img {
 
 /* Style for the show password button on hover and active */
 .btn-show-pass:hover {
-    color: #4caf50;
+    color: #fff;
 }
 
 .btn-show-pass:active {
-    color: #4caf50;
+    color: #fff;
 }
 
 /* Remove button outline */
@@ -185,21 +187,22 @@ button {
     outline: none !important;
     border: none;
     background: transparent;
+    color: #fff;
 }
 
 /* Style for text 1 */
 .txt1 {
     font-family: 'Popppins';
     font-size: 13px;
-    color: #666666;
+    color: #fff;
     line-height: 1.5;
 }
 
 /* Style for text 2 */
 .txt2 {
     font-family: 'Popppins';
-    font-size: 13px;
-    color: #333333;
+    font-size: 18px;
+    color: #fff;
     line-height: 1.5;
     text-decoration: none;
     transform: all 0.4;
@@ -236,7 +239,7 @@ button {
 .login-form-btn {
     font-family: "Poppins";
     font-size: 15px;
-    color: black;
+    color: #fff;
     line-height: 1.2;
     font-weight: bold;
     text-transform: uppercase;

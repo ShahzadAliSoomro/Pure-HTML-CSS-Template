@@ -17,8 +17,8 @@ const cardUrls = [
     'https://auspicious-dark.surge.sh/',
     'https://telling-dark.surge.sh/',
     
-    'https://enchanted-wash.surge.sh',
-    'https://ultra-spring.surge.sh',
+    'https://daffy-login.surge.sh/',
+    'https://true-signup.surge.sh/',
     
     
     // Add more URLs as needed for each card
